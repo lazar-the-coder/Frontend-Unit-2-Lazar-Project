@@ -1,20 +1,65 @@
 html {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+    text-align: center;
+    font-size: 1.1rem;
+}
+main {
+    background-color: white;
+}
+header, footer {
+    background-color: gainsboro;
 }
 h1, h2, h3, h4, nav {
     font-family: 'Abel', sans-serif;
     font-weight: bold;
 }
+header, footer {
+    padding: 1px 0rem;
+}
+h2, article, section, nav, .desc {
+    padding: 0.4em 0rem;
+}
 a:link {
     text-decoration: none;
 }
-ul {
-    list-style-type: none
+ul, h4 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
+nav li, .skill-demo, .skill-list {
+    padding: 0.6em;
+    margin: 0.2em;
+    background-color: aliceblue;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.skill-list, #bottom {
+    display: flex;
+}
+.skills {
+    flex-grow: 1;
+}
+#bottom {
+    justify-content: space-between;
+}
+img {
+    max-width: 100%;
+}
+#image-credit{
+    margin: 1rem auto
+}
 @media screen and (min-width: 768px) {
-
+    header {
+        background-image: url(../img/vecteezy_ocean-surface-calm-middle-sea-with-yacht-clouds-hills_7818625.jpg);
+        color: white;
+    }
+    .desc {
+        text-shadow: 1px 1px 0 black ;
+    }
 }
 
 @media screen and (min-width: 1024px) {
