@@ -4,11 +4,11 @@ html {
     text-align: center;
     font-size: 1.1rem;
 }
+body {
+    background-color: gainsboro;
+}
 main {
     background-color: white;
-}
-header, footer {
-    background-color: gainsboro;
 }
 h1, h2, h3, h4, nav {
     font-family: 'Abel', sans-serif;
@@ -17,18 +17,23 @@ h1, h2, h3, h4, nav {
 header, footer {
     padding: 1px 0rem;
 }
-h2, article, section, nav, .desc {
+h2 {
+    width: 100%;
+}
+h2, article, section, nav, #desc {
     padding: 0.4em 0rem;
 }
 a:link {
     text-decoration: none;
 }
-ul, h4 {
-    list-style-type: none;
+ul, h4, #bottom p, #bottom nav {
     margin: 0;
     padding: 0;
 }
-nav li, .skill-demo, .skill-list {
+ul {
+    list-style-type: none;
+}
+li, .skill-demo, .skill-list {
     padding: 0.6em;
     margin: 0.2em;
     background-color: aliceblue;
@@ -50,18 +55,64 @@ img {
     max-width: 100%;
 }
 #image-credit{
-    margin: 1rem auto
+    margin: 1rem auto;
+}
+#bottom nav{
+    display: none;
 }
 @media screen and (min-width: 768px) {
     header {
         background-image: url(../img/vecteezy_ocean-surface-calm-middle-sea-with-yacht-clouds-hills_7818625.jpg);
-        color: white;
+        color: black;
+        text-shadow: 1px 1px 0 white;
     }
-    .desc {
-        text-shadow: 1px 1px 0 black ;
+    header img {
+        margin: 1em;
+    }
+    nav ul, #desc, #skill, #portfolio, #bottom nav {
+        display: flex;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    nav li{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #desc {
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    #skill, #portfolio {
+        flex-wrap: wrap;
+    }
+    .project, .skill-demo {
+        flex-grow: 1;
+        width: 50%;
+    }
+    #bottom nav li{
+        flex: 1 300px;
+    }
+    #bottom h4{
+        display: none;
     }
 }
 
 @media screen and (min-width: 1024px) {
-
+    .project, .skill-demo {
+        width: 33%;
+    }
+    main {
+        background-color: gainsboro;
+    }
+    main .wrapper {
+        background-color: white;
+        padding: 0 1em;
+    }
+    #top {
+        display: flex;
+    }
+    h1 {
+        margin-left: 0em;
+        margin-right: auto;
+    }
 }
