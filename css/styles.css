@@ -1,0 +1,22 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, nav {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+a:link {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
