@@ -1,8 +1,10 @@
 html {
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
     text-align: center;
     font-size: 1.1rem;
+}
+* {
+    box-sizing: border-box;
 }
 body {
     background-color: gainsboro;
@@ -60,6 +62,9 @@ img {
 #bottom nav{
     display: none;
 }
+#bottom p{
+    margin: auto 0;
+}
 @media screen and (min-width: 768px) {
     header {
         background-image: url(../img/vecteezy_ocean-surface-calm-middle-sea-with-yacht-clouds-hills_7818625.jpg);
@@ -87,6 +92,8 @@ img {
     }
     .project, .skill-demo {
         flex-grow: 1;
+        background-clip: content-box;
+        padding: 1em;
         width: 50%;
     }
     #bottom nav li{
